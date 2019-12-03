@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.unmadesai.kardiacare4.Emergency">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Please provide the contacts to be contacted in case of emergency"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx1"
+            android:text="Contact 1"
+            android:textSize="18dp"
+            android:textColor="@color/textColor" />
+        <EditText
+            android:id="@+id/editname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name1"
+            android:textColor="@color/textColor"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/editname1"
+            android:layout_marginTop="10dp"
+            android:text="Contact 2"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/editname2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name2"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/textColor"
+            android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start "
+            android:layout_below="@id/editname2"
+            style="@android:style/TextAppearance.Small"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/start_btn"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

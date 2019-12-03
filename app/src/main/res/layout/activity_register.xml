@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.unmadesai.kardiacare4.RegisterActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/prompt_name"
+            android:textColor="@color/textColor"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx1"
+            android:textColor="@color/textColor"
+            android:textCursorDrawable="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:id="@+id/tx3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/reg_name"
+            android:layout_marginTop="10dp"
+            android:text="@string/prompt_password"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx3"
+            android:inputType="textPassword"
+            android:textColor="@color/textColor"
+            android:textCursorDrawable="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tx4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/reg_password"
+            android:layout_marginTop="10dp"
+            android:text="@string/prompt_con_password"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/reg_con_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx4"
+            android:inputType="textPassword"
+            android:textColor="@color/textColor"
+            android:textCursorDrawable="@color/textColor"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_bn_label"
+            android:layout_below="@id/reg_con_password"
+            style="@android:style/TextAppearance.Small"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/reg_btn"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_check_in">CheckInActivity</string>
+    <string name="title_activity_sensor">Sensor</string>
+    <string name="title_activity_bluetooth">Bluetooth</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="app_name">KardiaCare</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="login_bn_label">LOGIN</string>
+    <string name="sign_up">New User? Sign Up</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_con_password">Confirm Password</string>
+    <string name="reg_bn_label">Register</string>
+</resources>
